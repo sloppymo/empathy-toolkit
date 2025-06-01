@@ -146,7 +146,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-Your Name - your.email@example.com
+Morgan Roberts MSW LPHA - morgan@forestwithintherapy.com
 
-Project Link: [https://github.com/yourusername/empathy-toolkit](https://github.com/yourusername/empathy-toolkit)
+Project Link: [https://github.com/sloppymo/empathy-toolkit](https://github.com/sloppymo/empathy-toolkit)
 
