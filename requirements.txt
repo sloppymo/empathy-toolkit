@@ -1,24 +1,39 @@
-# Core dependencies
-numpy>=1.24.0
-pandas>=2.0.0
-scikit-learn>=1.2.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
+# Core dependencies - Python 3.13 compatible
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.3.2
+matplotlib>=3.8.0
+jsonlines>=4.0.0
+tqdm>=4.66.0
 
-# NLP tools
-nltk>=3.8
-transformers>=4.30.0
-sentence-transformers>=2.2.2
+# API and Async HTTP - avoiding OpenAI SDK due to Rust dependencies
+httpx>=0.25.2  # Async HTTP client used for OpenAI API calls
+python-dotenv>=1.0.0  # For loading API keys from .env
+tenacity>=8.2.3  # For retrying API calls
 
-# Web and API
-flask>=2.3.0
-httpx>=0.24.0  # Used for direct API calls instead of OpenAI SDK
-streamlit>=1.24.0
+# Data handling
+dataclasses-json>=0.6.1  # For serializing/deserializing dataclasses
+typing-extensions>=4.8.0
 
-# Utilities
-tqdm>=4.65.0
-pyyaml>=6.0
-python-dotenv>=1.0.0
+# Visualization and CLI tools
+rich>=13.6.0  # Terminal formatting, tables, and progress bars
+matplotlib>=3.8.0  # For visualization components
+seaborn>=0.13.0  # Optional, for enhanced visualizations
 
-# Note: Explicitly avoiding packages with Rust dependencies
-# that cause issues with Python 3.13
+# Web components
+flask>=2.3.3  # For web API (optional)
+flask-cors>=4.0.0  # For cross-origin requests (optional)
+waitress>=2.1.2  # Production WSGI server for Flask (optional)
+
+# Optional NLP components that work with Python 3.13
+# Note: Install only what you need to avoid compatibility issues
+# spacy>=3.7.2
+# transformers>=4.36.2  # Hugging Face transformers without torch
+
+# Note: The following packages have been explicitly avoided due to 
+# Rust dependencies or known Python 3.13 compatibility issues:
+# - openai (use httpx directly instead)
+# - pydantic < 2.0 (compatibility issues)
+# - fastapi (depends on pydantic)
+# - torch (large package, optional for this toolkit)
+# - streamlit (compatibility issues with Python 3.13)
