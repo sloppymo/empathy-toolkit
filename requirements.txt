@@ -1,0 +1,24 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# NLP tools
+nltk>=3.8
+transformers>=4.30.0
+sentence-transformers>=2.2.2
+
+# Web and API
+flask>=2.3.0
+httpx>=0.24.0  # Used for direct API calls instead of OpenAI SDK
+streamlit>=1.24.0
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Note: Explicitly avoiding packages with Rust dependencies
+# that cause issues with Python 3.13
