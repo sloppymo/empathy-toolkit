@@ -67,3 +67,6 @@ batch_output/
 !examples/*.csv
 !examples/*.jsonl
 !examples/*.json
+.env.development
+.env.production
+.env.*
